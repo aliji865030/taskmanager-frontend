@@ -1,0 +1,29 @@
+.taskItem{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+.taskItem h3{
+    font-size: 22px;
+}
+.taskItem p{
+    font-size: 18px;
+}
+.taskItem select{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.taskItem button{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #CF352E;
+    color: white;
+    cursor: pointer;
+}
+.taskItem button:hover{
+    background-color: #B02B25;
+    transition: all .2s ease-in-out;
+}

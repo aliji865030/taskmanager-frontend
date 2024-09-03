@@ -1,0 +1,26 @@
+.register form{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    padding: 2rem;
+    gap: 20px;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    border-radius: 10px;
+}
+.register form input{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.register form button{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4169e1;
+    color: white;
+    cursor: pointer;
+}
+.register form button:hover{
+    background-color: #00a86b;
+    transition: all .2s ease-in-out;
+}

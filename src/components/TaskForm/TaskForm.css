@@ -1,0 +1,23 @@
+.taskForm form{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.taskForm form input, .taskForm form textarea , .taskForm form select{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.taskForm form button{
+    padding: 5px 40px;
+    border: none;
+    border-radius: 30px;
+    background-color:#4169e1 ;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+.taskForm form button:hover{
+    background-color: #00a86b;
+    transition: all .2s ease-in-out;
+}
