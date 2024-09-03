@@ -11,6 +11,7 @@ import "./App.css"
 function App() {
   const [tasks, setTasks] = useState([]);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [currentState, setCurrentState] = useState(true);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -95,6 +96,10 @@ function App() {
     setTasks([]);
   };
 
+  const StateHandler = () => {
+    setCurrentState(!currentState)
+  }
+
   return (
     <div className="App">
       <h1>Task Management Application</h1>
@@ -106,8 +111,10 @@ function App() {
         </>
       ) : (
         <div className='login'>
-          <RegisterForm setIsAuthenticated={setIsAuthenticated} />
-          <LoginForm setIsAuthenticated={setIsAuthenticated} />
+          {currentState ? <RegisterForm setIsAuthenticated={setIsAuthenticated} />
+          : <LoginForm setIsAuthenticated={setIsAuthenticated} />
+        }
+          <p>{currentState ? "Already have an account " : "Create new account "} <span onClick={StateHandler}>Click here</span></p>
         </div>
       )}
     </div>

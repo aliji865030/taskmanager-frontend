@@ -20,7 +20,12 @@
 }
 .login{
     display: flex;
+    flex-direction: column;
     gap: 2rem;
+}
+.login span{
+    color: red;
+    cursor: pointer;
 }
 
 
